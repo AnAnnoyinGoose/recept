@@ -1,14 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap');
 body{
+    font-family: Zen Kaku Gothic Antique;
     background-color: cadetblue;
 }
-body header h1{
-font
-}
-body header{
+body header {
+    display: grid;
     justify-content: center;
-    display: flex;
 }
-body nav {
-justify-content: center;
 
+
+body nav{
+    display: flex;
+    justify-content: center;
+    gap: 25rem;
 }
+body nav a{
+    display: block;
+    width: fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+   border: solid cadetblue;
+    text-decoration: none;
+    color: white;
+    transition: 400ms;
+}
+body nav a:hover{
+border: solid rgba(68, 112, 114, 0.623);
+transition: 400ms;
+transform: scale(110%);
+border-radius: 3px;
+}
+body main img.ir1{
+    display: flex;
+    margin: 4em;
+    float: right;
+    transform: translate(-350%, 65%);
+    }
+body main .r1 article{
+    width: 30%;
+}
+
+body main .r1{ 
+ display: flex;
+ border-top: 9px cadetblue double;
+ border-right: 9px cadetblue double;
+ border-bottom: 9px cadetblue double;
+ transition: 900ms;
+ gap: 16em;
+}
+body main .r1:hover{
+    transition: 900ms;
+    border-top: 9px lightslategrey double; 
+    border-radius: 0px 44px 44px 0px ;
+    border-bottom: 9px lightslategrey double;
+    border-right: 9px lightslategrey double;
+}
+body main .r2{
+    display: flex;
+   width: 50%;
+    border-top: 9px cadetblue double;
+    border-left: 9px cadetblue double;
+    border-bottom: 9px cadetblue double;
+    transition: 900ms;
+    gap: 16em;  
+    height: 500px;
+    padding: 1em;
+}
+body main .r2:hover{
+    transition: 900ms;
+    border-top: 9px lightslategrey double; 
+    border-radius: 44px 0px 0px 44px ;
+    border-bottom: 9px lightslategrey double;
+    border-left: 9px lightslategrey double;
+}
+
+body main .r2 article{
+    width: 23%;
+}
+body main img.ir2{
+    display: flex;
+    float: right;
+    transform: translate(-120%, 70%);
+}
+* { scroll-behavior: smooth;}
